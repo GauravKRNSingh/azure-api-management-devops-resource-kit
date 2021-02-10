@@ -4,9 +4,6 @@
   "parameters": {
     "ApimServiceName": {
       "type": "string"
-    },
-    "serviceUrl": {
-      "type": "object"
     }
   },
   "resources": [
@@ -22,7 +19,6 @@
         "apiVersionSetId": "[resourceId('Microsoft.ApiManagement/service/apiVersionSets', parameters('ApimServiceName'), 'EchoAPICreatorSetID')]",
         "subscriptionRequired": false,
         "displayName": "Echo API",
-        "serviceUrl": "[parameters('serviceUrl').EchoAPI]",
         "path": "conf",
         "protocols": [
           "https"
