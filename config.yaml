@@ -1,0 +1,26 @@
+version: 0.0.1
+apimServiceName: test-apim-gsifif
+apiVersionSets:
+    - id: EchoAPICreatorSetID
+      displayName: EchoAPISet 
+      description: Echo API set from creator
+      versioningScheme: Query
+      versionQueryName: versionQuery
+      versionHeaderName: versionHeader
+
+apis:
+    - name: Echo API
+      type: http
+      displayName: Echo API
+      description: Echo API
+      openApiSpec: C:\Users\Gaurav Singh\Documents\LearnDevOps\New\azure-api-management-devops-resource-kit\Echo API.swagger.json
+      policy: C:\Users\Gaurav Singh\Documents\LearnDevOps\New\azure-api-management-devops-resource-kit\policy.xml
+      suffix: conf
+      apiVersion: v1
+      apiVersionDescription: ECHO API 1st Version
+      apiVersionSetId: EchoAPICreatorSetID
+      apiRevision: 1
+      apiRevisionDescription: My first revision 
+
+
+outputLocation: C:\Users\Gaurav Singh\Documents\LearnDevOps\New\azure-api-management-devops-resource-kit
