@@ -9,10 +9,10 @@ apiVersionSets:
       versionHeaderName: versionHeader
 
 apis:
-    - name: Echo API
+    - name: EchoAPI
       type: http
-      displayName: Echo API
-      description: Echo API
+      displayName: EchoAPI
+      description: EchoAPI
       openApiSpec: C:\Users\Gaurav Singh\Documents\LearnDevOps\New\azure-api-management-devops-resource-kit\Echo API.swagger.json
       policy: C:\Users\Gaurav Singh\Documents\LearnDevOps\New\azure-api-management-devops-resource-kit\policy.xml
       suffix: conf
